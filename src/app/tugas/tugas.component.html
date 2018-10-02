@@ -1,0 +1,13 @@
+<p>
+  "Tugas Data Binding"
+</p>
+<label>Masukan Username : </label> 
+<input type="text"
+class="from-control" 
+[(ngModel)]="username">
+<p>Username : {{username}}</p>
+
+<button class="btn btn-primary"
+[disabled] = "TombolCek()" 
+(click)="hapus()">Add Username</button>
+

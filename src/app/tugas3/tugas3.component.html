@@ -1,0 +1,12 @@
+<button 
+class="btn btn-primary" 
+(click)="onCreationStatus()">Tampilkan Detail</button><BR>
+<p>{{ campus }}</p>
+
+<p *ngFor="let campus of arraycampus" 
+[ngStyle]="{backgroundColor: campus >=5 ? 'blue' : transparant }"
+[ngClass]="{online: campus >=5 }"
+> {{ campus }}</p>
+
+
+
